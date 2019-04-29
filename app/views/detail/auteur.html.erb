@@ -31,20 +31,25 @@
 
 
     <div class="container">
-      <h1>Potin n°:<%= @gossip.id %> </h1>
+      <h1>Auteur : <%=@user.first_name %> <%=@user.last_name %> </h1>
+
 <br><br>
         <div>
             <div class="alert alert-dark alert-dismissible fade show" role="alert">
-              Titre du potin : <%=@gossip.title %> <br>
-              <hr>
-              <%=@gossip.content %> 
-              <hr>
-              Créé par <%=@gossip.user.first_name %>  <%=@gossip.user.last_name %> le <%= @gossip.created_at.strftime("%d-%m-%Y %H:%M:%S") %> <br>
-              Modifié le : <%= @gossip.updated_at.strftime("%d-%m-%Y %H:%M:%S") %>
-              <hr>
+              Identifiant N° : <%=@user.id %><br>
 
-              <a href ="/auteur/<%= @gossip.user.id %>/" class="alert-link"><%= @gossip.user.first_name %> </a> 
-
+             <hr>
+            Détail : <%=@user.description %> 
+            <br>
+            <br>
+            E-mail : <%=@user.email %> 
+            <br>
+            <br>
+            Age :    <%=@user.age %> 
+            <br>
+            <br>
+            Ville :  <%=@user.city.name %> 
+            <br>
             </div>
           <p><br><br> </p>
         </div>

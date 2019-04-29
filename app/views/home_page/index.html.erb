@@ -37,9 +37,9 @@
         <div>
           <% @gossip.each.with_index do |gossip, i| %>
             <div class="alert alert-dark alert-dismissible fade show" role="alert">
-              <a href ="/gossip/<%= i + 1 %>/" class="alert-link"><%= gossip.content %> </a> 
+              <a href ="/gossip/<%= i + 1 %>/" class="alert-link"><%= gossip.title %> </a> 
               <hr>
-              Créé par <%= gossip.user.first_name %>  <%= gossip.user.last_name %>
+              Créé par <%= gossip.user.first_name %>
             </div>
           <% end %>             
           <p><br><br> </p>
@@ -51,7 +51,7 @@
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+      <p class="m-0 text-center text-white">Copyright &copy; Lioforest/thp 2019</p>
     </div>
     <!-- /.container -->
   </footer>
