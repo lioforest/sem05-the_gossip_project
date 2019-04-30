@@ -8,9 +8,10 @@ Pour tester notre site , tu dois suivre les étapes ci-dessous:
 
 1. Clone ce repo : git clone https://github.com/lioforest/sem05-the_gossip_project.git
 2. Fais un petit bundle install
-3. $ rails db:migrate
-4. $ rails db:seed 
-5. lancer le serveur  $: rails server 
+3. $ rails db:create
+4. $ rails db:migrate
+5. $ rails db:seed 
+6. lancer le serveur  $: rails server 
 
 
 
